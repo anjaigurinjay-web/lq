@@ -4,48 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Pribadi - Alif P.P</title>
-    <!-- Google Fonts untuk font yang dinamis dan modern -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <!-- ========================================================= -->
-    <!-- DEKORASI BOLA KACA & LATAR BELAKANG                         -->
-    <!-- ========================================================= -->
-
-    <!-- Latar Belakang Elemen Cair / Blob -->
     <div class="glass-bg-shape shape-1"></div>
     <div class="glass-bg-shape shape-2"></div>
     <div class="glass-bg-shape shape-3"></div>
 
-    <!-- Setengah Bola Kaca Besar di Setiap Pojok -->
     <div class="glass-corner corner-tl"></div>
     <div class="glass-corner corner-tr"></div>
     <div class="glass-corner corner-bl"></div>
     <div class="glass-corner corner-br"></div>
-
-    <!-- Bola-Bola Kaca Kecil di Background -->
     <div class="glass-orb orb-1"></div>
     <div class="glass-orb orb-2"></div>
     <div class="glass-orb orb-3"></div>
     <div class="glass-orb orb-4"></div>
     <div class="glass-orb orb-5"></div>
 
-    <!-- ========================================================= -->
-    <!-- KONTEN UTAMA PORTOFOLIO                                   -->
-    <!-- ========================================================= -->
 
     <!-- Kontainer Utama -->
     <main class="liquid-glass-container">
 
-        <!-- Bagian Header (Gaya Full Kaca, Huruf Transparan) -->
         <header class="liquid-header">
             <h1>HALO, SAYA <span class="glass-text">ALIF P.P</span></h1>
             <p>Seorang Pelajar yang suka mengeksplorasi segala hal.</p>
         </header>
 
-        <!-- KONTEN MENU: PROFIL (Default aktif) -->
         <div id="profil" class="tab-content active">
             <section class="glass-card">
                 <h2>Tentang Saya</h2>
@@ -62,7 +48,6 @@
             </section>
         </div>
 
-        <!-- KONTEN MENU: PRESTASI -->
         <div id="prestasi" class="tab-content">
             <section class="glass-card">
                 <h2>🏆 Prestasi Saya</h2>
@@ -74,21 +59,17 @@
                 
                 <p style="margin-top: 20px; margin-bottom: 5px;"><strong>Dokumentasi / Sertifikat:</strong></p>
                 
-                <!-- Galeri Foto Prestasi (Menggunakan folder images/) -->
                 <div class="gallery-grid">
-                    <!-- 1. Karate -->
                     <div class="photo-box">
                         <img src="images/karate.jpeg" alt="Prestasi Karate" style="width:100%; height:100%; object-fit:cover; border-radius:10px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <span style="display:none; font-size: 0.75rem;">karate.jpeg tidak ditemukan</span>
                     </div>
 
-                    <!-- 2. MLBB -->
                     <div class="photo-box">
                         <img src="images/ml.jpeg" alt="Prestasi MLBB" style="width:100%; height:100%; object-fit:cover; border-radius:10px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <span style="display:none; font-size: 0.75rem;">ml.jpeg tidak ditemukan</span>
                     </div>
 
-                    <!-- 3. Computing -->
                     <div class="photo-box">
                         <img src="images/computing.jpeg" alt="Pembelajaran Komputer" style="width:100%; height:100%; object-fit:cover; border-radius:10px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                         <span style="display:none; font-size: 0.75rem;">computing.jpeg tidak ditemukan</span>
@@ -97,7 +78,6 @@
             </section>
         </div>
 
-        <!-- KONTEN MENU: PERJALANAN HIDUP -->
         <div id="perjalanan" class="tab-content">
             <section class="glass-card">
                 <h2>🚀 Perjalanan Hidup</h2>
@@ -107,12 +87,10 @@
             </section>
         </div>
 
-        <!-- KONTEN MENU: FOTO-FOTO RANDOM -->
         <div id="galeri" class="tab-content">
             <section class="glass-card">
                 <h2>📷 Foto-Foto Random</h2>
                 <p>Kumpulan momen seru atau hal-hal menarik:</p>
-                <!-- Galeri Foto Random (Menggunakan folder images/) -->
                 <div class="gallery-grid">
                     <div class="photo-box">
                         <img src="images/random1.jpeg" alt="Random 1" style="width:100%; height:100%; object-fit:cover; border-radius:10px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
@@ -130,10 +108,9 @@
             </section>
         </div>
 
-        <!-- KONTEN MENU: PASANGAN (SPECIAL MENU DENGAN HATI LIQUID GLASS) -->
         <div id="pasangan" class="tab-content">
             <section class="glass-card romantic-card">
-                <!-- Efek Bentuk Hati Kecil Berwarna Merah (Liquid Glass Hearts) -->
+            
                 <div class="liquid-heart h-1">❤️</div>
                 <div class="liquid-heart h-2">❤️</div>
                 <div class="liquid-heart h-3">💖</div>
@@ -148,7 +125,6 @@
 
                 <p style="margin-top: 20px; margin-bottom: 5px;"><strong>Momen Kita:</strong></p>
                 
-                <!-- Galeri Foto Pasangan (Menggunakan folder images/) -->
                 <div class="gallery-grid">
                     <div class="photo-box">
                         <img src="images/pacar1.jpeg" alt="Jovita 1" style="width:100%; height:100%; object-fit:cover; border-radius:10px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
@@ -174,9 +150,6 @@
 
     </main>
 
-    <!-- ========================================================= -->
-    <!-- MENU NAVIGASI MELAYANG DI BAWAH (FLOATING BOTTOM NAV)      -->
-    <!-- ========================================================= -->
     <nav class="glass-card nav-container floating-nav">
         <div class="nav-indicator"></div>
         <button class="nav-btn active" onclick="bukaMenu(event, 'profil')">Profil</button>
